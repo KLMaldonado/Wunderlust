@@ -16,7 +16,7 @@
         <nav>
             <ul>
                 <li><a href="">Destinations</a></li>
-                <li><a href="">Inspirations</a><li>
+                <li><a href="">Inspirations</a></li>
                 <li><a href="">Special</a></li>
                 <li><a href="">Contact Us</a></li>
             </ul> 
@@ -173,27 +173,50 @@
             </section>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
             <form>
-            <h2>Contact Us</h2>
-First Name (Enter first name)
-
-Last Name (Enter last name)
-
-
-Contact Method (Email, Text, Phone)
-
-Email Address (Enter Email)
-
-Phone Number (Enter telephone number)
-
-
-Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-
-Travel Time (Fall, Winter, Spring, Summer, Flexible)
-</form>
-</main>
-<footer>
-    <aside>Copyright 2021 Wunderlust</aside>
-    <a href="#">Privacy Statement</a>
-    <a href="#">Terms of Service</a>
-</footer>
+                <h2>Contact Us</h2>
+                <label for="firstName">First Name<span>*</span></label>
+                <input id="firstName" type="text" autocomplete="name" placeholder="Enter first name" required></input>
+                <label for="lastName">Last Name<span>*</span></label>
+                <input id="lastName" type="text" autocomplete="name" placeholder="Enter last name" required></input>
+                <fieldset required>
+                    <legend>Contact Method<span>*</span></legend>
+                    <label for="prefEmail" type="radio">Email</label>
+                    <input id="prefEmail" required></input>
+                    <label for="prefText" type="radio">Text</label>
+                    <input id="prefText" required></input>
+                    <label for="prefPhone" type="radio">Phone</label>
+                    <input id="prefPhone" required></input>
+                </fieldset>   
+                <label for="email" type="text">Email Address</label>
+                <input id="email" autocomplete="email" placeholder="Enter Email" required></input>
+                <label for="phone" type="tel">Phone Number</label>
+                <input id="phone" autocomplete="Enter telephone number" required></input> 
+                <label for="destination">Destination<span>*</span></label>
+				<select id="destination" name="destination" required>
+					<option value="Select">Select</option>
+					<option value="Barcelona">Barcelona</option>
+					<option value="Granada">Granada</option>
+					<option value="Ibiza">Ibiza</option>
+					<option value="Madrid">Madrid</option>
+					<option value="Majorca">Majorca</option>
+					<option value="Seville">Seville</option>
+					<option value="Tenerife">Tenerife</option>
+					<option value="Valencia">Valencia</option>
+				</select>
+                <label for="travelTime">Travel Time<span>*</span></label>
+                <select id="travelTime" name="travelTime" required>
+					<option value="Select">Select</option>
+					<option value="Fall">Fall</option>
+					<option value="Winter">Winter</option>
+					<option value="Spring">Spring</option>
+					<option value="Summer">Summer</option>
+					<option value="Flexible">Flexible</option>
+				</select>
+            </form>
+        </main>
+        <footer>
+            <aside>Copyright 2021 Wunderlust</aside>
+            <a href="#">Privacy Statement</a>
+            <a href="#">Terms of Service</a>
+        </footer>
 </html>
